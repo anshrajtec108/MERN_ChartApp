@@ -4,29 +4,29 @@ import React, { useState } from 'react'
 function Signup() {
   const [show, setShow] = useState(false);
   const handleClick = () => setShow(!show);
-  const[name,setname]=useState()
+  const [name, setname] = useState()
   const [email, setemail] = useState()
   const [confirmpassword, setconfirmpassword] = useState()
   const [password, setpassword] = useState()
   const [pic, setpic] = useState()
-  const postDetails=()=>{}
-  const submitHandler=()=>{}
+  const postDetails = () => { }
+  const submitHandler = () => { }
   return (
-   <VStack spacing="5px">
-    <FormControl id="frist-name" isRequired>
-      <FormLabel>Name</FormLabel>
-      <Input 
-      placeholder='Enter your Name'
-      onChange={(e)=>setname(e.target.value)}
-      />
-    </FormControl>
+    <VStack spacing="5px">
+      <FormControl id="frist-name" isRequired>
+        <FormLabel>Name</FormLabel>
+        <Input
+          placeholder='Enter your Name'
+          onChange={(e) => setname(e.target.value)}
+        />
+      </FormControl>
       <FormControl id="email" isRequired>
         <FormLabel>Email Address</FormLabel>
-        <Input 
-        type="email"
-         placeholder='Enter your Email Address'
+        <Input
+          type="email"
+          placeholder='Enter your Email Address'
           onChange={(e) => setemail(e.target.value)}
-           />
+        />
       </FormControl>
       <FormControl id="password" isRequired>
         <FormLabel>Password</FormLabel>
@@ -72,12 +72,12 @@ function Signup() {
         width="100%"
         style={{ marginTop: 15 }}
         onClick={submitHandler}
-        
+
       >
         Sign Up
       </Button>
 
-   </VStack>
+    </VStack>
   )
 }
 
